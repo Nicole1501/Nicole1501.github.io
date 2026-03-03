@@ -51,7 +51,7 @@ h1, h2, h3 {
   text-decoration: underline;
 }
 
-/* (3) Float + clear (4.5) — use on Gallery image */
+/* (3) Float and clear (4.5) . This i for Gallery image */
 .float-right {
   float: right;
   margin: 0 0 12px 12px;
@@ -63,7 +63,7 @@ h1, h2, h3 {
   clear: both;
 }
 
-/* Optional: make images not huge */
+/* Make images not huge */
 img {
   max-width: 100%;
   height: auto;
