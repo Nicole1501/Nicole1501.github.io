@@ -1,32 +1,36 @@
-function startGame() {
-   let user = prompt("What is your name?");
-   console.log("Hello, " + user + "!");
+let user = prompt("What is your name?");
+console.log("Hello, " + user + "!");
 
-   tennisGame(user);
-}
+tennisGame();
 
-function tennisGame(user) {
-   let choice1;
-   let choice2;
-   let choice3;
+function tennisGame() {
+   let choice1, choice2, choice3;
 
    console.log("Welcome to the tennis match, " + user + "!");
 
-   choice1 = prompt("You are serving. Do you serve 'wide' or 'middle'?");
+   choice1 = prompt("You are serving. Do you serve 'wide' or 'middle'?")
+      .toLowerCase().trim();
 
    if (choice1 === "wide") {
-      choice2 = prompt("Great serve! Opponent returns. Do you hit 'forehand' or 'backhand'?");
+
+      choice2 = prompt("Great serve! Opponent returns. Do you hit 'forehand' or 'backhand'?")
+         .toLowerCase().trim();
 
       if (choice2 === "forehand") {
-         choice3 = prompt("You have control. Do you go to the 'net' or stay 'baseline'?");
+
+         choice3 = prompt("You have control. Do you go to the 'net' or stay 'baseline'?")
+            .toLowerCase().trim();
 
          if (choice3 === "net") {
             console.log("Perfect volley! You win the point. Ending 1");
          } else {
             console.log("You stay back and hit a winner. Ending 2");
          }
+
       } else {
-         choice3 = prompt("Backhand rally. Do you play 'safe' or go 'aggressive'?");
+
+         choice3 = prompt("Backhand rally. Do you play 'safe' or go 'aggressive'?")
+            .toLowerCase().trim();
 
          if (choice3 === "safe") {
             console.log("Too passive. Opponent wins. Ending 3");
@@ -36,18 +40,25 @@ function tennisGame(user) {
       }
 
    } else if (choice1 === "middle") {
-      choice2 = prompt("Opponent attacks. Do you 'defend' or 'counter'?");
+
+      choice2 = prompt("Opponent attacks. Do you 'defend' or 'counter'?")
+         .toLowerCase().trim();
 
       if (choice2 === "defend") {
-         choice3 = prompt("Long rally. Do you wait or go for a 'winner'?");
+
+         choice3 = prompt("Long rally. Do you wait or go for a 'winner'?")
+            .toLowerCase().trim();
 
          if (choice3 === "winner") {
             console.log("Amazing shot! You win the rally. Ending 5");
          } else {
             console.log("You wait too long and lose. Ending 6");
          }
+
       } else {
-         choice3 = prompt("You counterattack. Do you aim 'cross' or 'down'?");
+
+         choice3 = prompt("You counterattack. Do you aim 'cross' or 'down'?")
+            .toLowerCase().trim();
 
          if (choice3 === "cross") {
             console.log("Great angle! You win. Ending 7");
