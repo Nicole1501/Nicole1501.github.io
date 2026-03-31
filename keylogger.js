@@ -11,7 +11,7 @@ document.addEventListener("keydown", function(event) {
 
    console.clear();
    for (let k in keyCounts) {
-      console.log(k + ": " + keyCounts[k]);
+      console.log("Key [" + k + "]: " + keyCounts[k]);
    }
    
    if (key === " " && keyCounts[key] === 5) {
