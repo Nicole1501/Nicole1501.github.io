@@ -1,23 +1,23 @@
-let user = prompt("What is your name?");
-console.log("Hello, " + user + "!");
+function startGame() {
+   let user = prompt("What is your name?");
+   console.log("Hello, " + user + "!");
 
-tennisGame();
+   tennisGame(user);
+}
 
-function tennisGame() {
+function tennisGame(user) {
    let choice1;
    let choice2;
    let choice3;
-   
+
    console.log("Welcome to the tennis match, " + user + "!");
 
    choice1 = prompt("You are serving. Do you serve 'wide' or 'middle'?");
 
    if (choice1 === "wide") {
-
       choice2 = prompt("Great serve! Opponent returns. Do you hit 'forehand' or 'backhand'?");
 
       if (choice2 === "forehand") {
-
          choice3 = prompt("You have control. Do you go to the 'net' or stay 'baseline'?");
 
          if (choice3 === "net") {
@@ -25,9 +25,7 @@ function tennisGame() {
          } else {
             console.log("You stay back and hit a winner. Ending 2");
          }
-
       } else {
-
          choice3 = prompt("Backhand rally. Do you play 'safe' or go 'aggressive'?");
 
          if (choice3 === "safe") {
@@ -38,11 +36,9 @@ function tennisGame() {
       }
 
    } else if (choice1 === "middle") {
-
       choice2 = prompt("Opponent attacks. Do you 'defend' or 'counter'?");
 
       if (choice2 === "defend") {
-
          choice3 = prompt("Long rally. Do you wait or go for a 'winner'?");
 
          if (choice3 === "winner") {
@@ -50,9 +46,7 @@ function tennisGame() {
          } else {
             console.log("You wait too long and lose. Ending 6");
          }
-
       } else {
-
          choice3 = prompt("You counterattack. Do you aim 'cross' or 'down'?");
 
          if (choice3 === "cross") {
