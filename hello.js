@@ -1,6 +1,8 @@
 let user = prompt("What is your name?");
 console.log("Hello, " + user + "!");
 
+tennisGame();
+
 function tennisGame() {
    let choice1;
    let choice2;
@@ -64,5 +66,4 @@ function tennisGame() {
       console.log("Invalid choice. Game over.");
    }
 }
-
 
