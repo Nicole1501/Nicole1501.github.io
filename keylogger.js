@@ -1,3 +1,5 @@
+console.log("JS is loaded!");
+
 let keyCounts = {};
 
 document.addEventListener("keydown", function(event) {
