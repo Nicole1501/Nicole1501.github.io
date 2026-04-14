@@ -113,3 +113,36 @@ button:hover {
   background-color: #8a2a44;
 }
 
+/* COLLAPSIBLE SECTIONS */
+
+.content {
+  display: none;
+  margin-top: 10px;
+}
+
+.collapsible.active .content {
+  display: block;
+}
+
+.toggle {
+  background-color: #601c2e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.collapsible {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.collapsible:hover {
+  background-color: #f0f0f0;
+}
