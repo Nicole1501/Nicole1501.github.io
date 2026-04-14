@@ -5,6 +5,7 @@
       <title>My Website</title>
       <link rel="icon" href="favicon_io/favicon.ico">
       <link rel="stylesheet" href="style.css">
+      <script src="collapsiblesections.js" defer></script>
    </head>
 <body>
   <div class="container">
@@ -19,7 +20,8 @@
   <main class="card">
     <h1 id="page-title">My Gallery</h1>
 
-    <section>
+    <section class="collapsible">
+  <button class="toggle">+</button>
       <h2>Exhibit 1: Social Media Day</h2>
       <p>This is meaningful to me because it’s a picture of me on Social Media Day at Holy Cross,
       doing a tennis pose. I really enjoyed that day and it reminds me of a fun memory.</p>
@@ -27,7 +29,8 @@
     <div class="clearfix"></div>
     </section>
 
-    <section>
+    <section class="collapsible">
+  <button class="toggle">+</button>
       <h2>Exhibit 2: My Tennis Video</h2>
       <p>This video is important to me because it takes me back to a few years ago and motivates me to keep getting better at tennis.</p>
       <iframe
@@ -42,7 +45,8 @@
       </iframe>
     </section>
 
-    <section>
+    <section class="collapsible">
+  <button class="toggle">+</button>
       <h2>Exhibit 3: A Song That Motivates Me</h2>
       <p>I chose this because it helps me focus and feel confident before a tennis match.</p>
       <audio controls>
