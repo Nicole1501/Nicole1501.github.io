@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="icon" href="favicon_io/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="api.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="sandbox.html">Sandbox</a>
+    <a href="api.html">API</a>
+  </nav>
+
+  <hr>
+
+  <div class="card">
+    <h1>Tennis Motivation Generator 🎾</h1>
+
+    <p>Enter a number (1–5) to get motivational quotes:</p>
+
+    <input type="number" id="quoteCount" min="1" max="5">
+    <button onclick="getQuotes()">Get Quotes</button>
+
+    <div id="results"></div>
+  </div>
+
+</div>
+</body>
+</html>
